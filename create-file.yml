@@ -1,0 +1,11 @@
+---
+- name: Create test file on Ubuntu server
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Create test_ansible.txt file
+      copy:
+        content: ""
+        dest: "/home/ubuntu/test_ansible.txt"
+        mode: "0644"
