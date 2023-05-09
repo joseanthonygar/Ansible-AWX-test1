@@ -1,6 +1,6 @@
 ---
 - name: Create test file on Ubuntu server
-  hosts: all
+  hosts: myserver
   become: yes
 
   tasks:
